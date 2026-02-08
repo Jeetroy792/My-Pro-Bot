@@ -10,7 +10,7 @@ async def start(bot, message):
     # ক্লেইম ভেরিফিকেশন চেক
     if len(message.command) > 1 and message.command[1].startswith("verify_"):
         await db.set_premium(message.from_user.id, 86400) # ২৪ ঘণ্টা
-        return await message.reply("<b>✅ Success! Premium activated for 24 hours.</b>")
+        return await message.reply("<b>✅ Success! Premium activated for 4 hours.</b>")
 
     text = "<b>👋 Welcome to Pro Forwarder v2.0</b>\n\nThe most powerful automation tool for your business."
     buttons = [
@@ -27,7 +27,7 @@ async def start(bot, message):
 @Client.on_message(filters.user(Config.OWNER_ID) & filters.command("set_shortner"))
 async def set_admin_shortner(bot, message):
     if len(message.command) < 3:
-        return await message.reply("<b>Usage:</b> `/set_shortner shareus.io your_api_key`")
+        return await message.reply("<b>Usage:</b> `/set_shortner gplinks.com e07aec576df2a9ed36f1b94b8017cc53b792496f`")
     
     endpoint = message.command[1]
     api_key = message.command[2]
