@@ -16,7 +16,7 @@ async def claim_logic(bot, query):
     short_link = f"https://{admin_short['endpoint']}/api?api={admin_short['api']}&url={original_link}"
     
     text = (
-        "<b>🎁 Claim 24 Hours Free Premium</b>\n\n"
+        "<b>🎁 Claim 4 Hours Free Premium</b>\n\n"
         "To unlock all features for free, click the link below and complete the captcha."
     )
     btn = [[InlineKeyboardButton("🔗 Unlock Now", url=short_link)]]
