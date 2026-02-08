@@ -1,4 +1,6 @@
 from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+
 @Client.on_callback_query(filters.regex("set_menu"))
 async def settings_menu(bot, query):
     buttons = [
