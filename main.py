@@ -20,7 +20,7 @@ async def main():
     Thread(target=run_flask).start()
     
     # মেইন বট ক্লায়েন্ট শুরু করা
-    print("🚀 Initializing Professional Forwarder Bot...")
+    print("🚀 Initializing SHREENATH DEVELOPER Bot...")
     forward_bot = Bot()
     
     await forward_bot.start()
