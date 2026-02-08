@@ -3,7 +3,7 @@
 # যদি কোনো ডিপেন্ডেন্সি বাকি থাকে তবে তা ইন্সটল করে নেবে
 pip3 install -U -r requirements.txt
 
-echo "🚀 Starting Professional Forwarder Bot..."
+echo "🚀 Starting SHREENATH DEVELOPER Bot..."
 
 # মেইন ফাইল রান করা
 python3 main.py
