@@ -5,4 +5,5 @@ flask
 requests
 asyncio
 python-dotenv
+gunicorn
 
