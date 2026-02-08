@@ -1,3 +1,4 @@
+from pyrogram import Client, filters
 @Client.on_callback_query(filters.regex("set_menu"))
 async def settings_menu(bot, query):
     buttons = [
