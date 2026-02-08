@@ -1,3 +1,5 @@
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @Client.on_message(filters.private & filters.command("start"))
 async def start_handler(bot, message):
     if len(message.command) > 1 and message.command[1].startswith("verify_"):
