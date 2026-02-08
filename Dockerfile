@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python:3.10-slim-bullseye
 
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y gcc python3-dev
